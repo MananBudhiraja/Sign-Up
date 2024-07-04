@@ -12,7 +12,7 @@ app.use(cors({
 
 const EmployeeModel = require('./models/employee.js');
 
-mongoose.connect('mongodb+srv://Manan:manan9897@cluster0.dbuqtvu.mongodb.net/', {
+mongoose.connect('mongodb+srv://Manan:manan9897@cluster0.dbuqtvu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
