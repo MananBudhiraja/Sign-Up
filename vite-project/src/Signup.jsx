@@ -25,7 +25,7 @@ function Signup() {
             return;
         }
 
-        axios.post('https://sign-up-56qk.vercel.app/register', { name, email, password })
+        axios.post('https://sign-up-vjcb.vercel.app//register', { name, email, password })
             .then(result => {
                 setSuccess("Registration successful!");
                 setError("");
