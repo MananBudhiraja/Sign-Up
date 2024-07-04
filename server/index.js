@@ -12,7 +12,14 @@ app.use(cors({
 
 const EmployeeModel = require('./models/employee.js');
 
-mongoose.connect('mongodb+srv://Manan:manan9897@cluster0.mlxcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://Manan:manan9897@cluster0.mlxcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log("Connected to MongoDB");
+}).catch(err => {
+    console.error("Failed to connect to MongoDB", err);
+});
 
 // mongoose.connect("mongodb://localhost:27017/employee", {
 //     useNewUrlParser: true,
