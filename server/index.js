@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ['https://sign-up-frontend-hazel.vercel.app/'], // Replace with your frontend's origin
+    origin: ['https://sign-up-frontend-opal.vercel.app/'], // Replace with your frontend's origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
