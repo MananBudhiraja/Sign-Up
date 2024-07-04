@@ -59,6 +59,12 @@ app.post('/register', (req, res) => {
         });
 });
 
+app.options('*', cors({
+    origin: 'https://sign-up-frontend-opal.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
+
 app.listen(3001, () => {
     console.log("Server is running on port 3001");
 });
