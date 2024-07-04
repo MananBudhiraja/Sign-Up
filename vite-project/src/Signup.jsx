@@ -11,6 +11,7 @@ function Signup() {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
 
+    axios.defaults.withCredentials=true;
     const handleSubmit = (e) => {
         e.preventDefault();
 
