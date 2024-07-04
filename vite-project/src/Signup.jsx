@@ -25,17 +25,17 @@ function Signup() {
             return;
         }
 
-        axios.post('https://sign-up-vjcb.vercel.app/register', { name, email, password })
-            .then(result => {
-                setSuccess("Registration successful!");
-                setError("");
-                console.log(result);
-            })
-            .catch(err => {
-                setError("Registration failed. Please try again.");
-                setSuccess("");
-                console.log(err);
-            });
+       axios.post('https://sign-up-vjcb.vercel.app/register', { name, email, password })
+        .then(result => {
+            setSuccess("Registration successful!");
+            setError("");
+            console.log("Result:", result);
+        })
+        .catch(err => {
+            setError("Registration failed. Please try again.");
+            setSuccess("");
+            console.log("Error:", err);
+        });
     }
 
     return (
