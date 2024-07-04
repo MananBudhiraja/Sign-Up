@@ -65,6 +65,10 @@ app.options('*', cors({
     credentials: true
 }));
 
+app.post('/register', (req, res) => {
+    res.json({ message: 'Registration successful!' });
+});
+
 app.listen(3001, () => {
     console.log("Server is running on port 3001");
 });
