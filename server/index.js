@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ['https://sign-up-fw54.vercel.app/'], // Replace with your frontend's origin
+    origin: ['https://sign-up-56qk.vercel.app/'], // Replace with your frontend's origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
