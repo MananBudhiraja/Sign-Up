@@ -23,7 +23,7 @@ mongoose.connect('mongodb+srv://Manan:manan9897@cluster0.mlxcb.mongodb.net/?retr
 //     console.error("Failed to connect to MongoDB", err);
 // });
 
-app.get("/"(req,res)=>{
+app.get("/",(req,res)=>{
     res.json("hello");
 })
 
