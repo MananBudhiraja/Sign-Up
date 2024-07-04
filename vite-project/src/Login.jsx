@@ -19,7 +19,7 @@ function Login() {
     }
 
 
-    axios.post('https://sign-up-frontend-hazel.vercel.app/login', { email, password })
+    axios.post('https://sign-up-vjcb.vercel.app/login', { email, password })
         .then(result => {
             setError("");
             console.log(result);
